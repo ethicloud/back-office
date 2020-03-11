@@ -29,6 +29,7 @@ ALLOWED_HOSTS = [
     'bo.local'
 ]
 
+AUTH_USER_MODEL = 'app.User'
 
 # Application definition
 
@@ -39,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'app'
 ]
 
 MIDDLEWARE = [
@@ -84,6 +86,7 @@ DATABASES = {
         'PASSWORD': os.getenv('POSTGRES_PASSWORD')
     }
 }
+
 
 
 # Password validation
