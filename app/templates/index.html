@@ -4,7 +4,6 @@
 
 
 {% if user.is_authenticated %}
-     
     User: {{ user.get_username }}
     <a href="{% url 'logout'%}?next={{request.path}}">Logout</a>
 
